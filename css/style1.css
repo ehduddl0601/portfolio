@@ -15,14 +15,14 @@ ul{
 
 /* 헤더 */
 #header_wrap{
-    background: #fff;
+    background: #fafafa;
     border-bottom: 1px solid #ccc;
 }
 #header{
     width: 1200px;
     height: 80px;
     margin: 0 auto;
-    background: #fff;
+    background: #fafafa;
     position: relative;
 }
 #header h1{
@@ -58,6 +58,7 @@ ul{
     padding: 50px;
     position: relative;
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 #work #number{
     background: #3fd464;
