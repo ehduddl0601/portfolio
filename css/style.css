@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style-type: none;
+}
+
+/* 헤더 */
+#header_wrap{
+    background: #fff;
+}
+#header{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+#header h1{
+    position: absolute;
+    left: 20px;
+    top: 28px;
+}
+#header nav{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+#header nav ul li{
+    float: left;
+    margin: 0 40px;
+}
+#header nav ul li a{
+    font-size: 18px;
+    font-weight: bold;
+}
+#header nav ul li:nth-child(1) a{
+    color: #3fd464;
+}
+#header nav ul li a:hover{
+    color: #3fd464;
+}
+
+/* 비주얼 */
+#main_visual{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    background-image: url("../img/visual.jpg");
+    position: relative;
+}
+#main_visual p{
+    font-size: 56px;
+    color: #fff;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    font-weight: bold;
+}
+#main_visual .job{
+    display: inline-block;
+    font-size: 48px;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    background-color: #000;
+    margin: 0 40px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#main_visual .job:hover{
+    background-color: #3fd464;
+    width: 800px;
+    color: #000;
+}
+#main_visual .name{
+    position: absolute;
+    color: #fff;
+    left: 240px;
+    bottom: 250px;
+    display: inline-block;
+    font-size: 48px;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    background-color: #000;
+    margin: 0 40px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+#main_visual .name:hover{
+    background-color: #3fd464;
+    left: 40px;
+    width: 700px;
+    color: #000;
+}
+/* About */
+#about_wrap{
+    background: rgb(251, 252, 255);
+    box-shadow: 2px 2px 4px #ddd;
+}
+#about{
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    background: rgb(251, 252, 255);
+    text-align: center;
+    position: relative;
+}
+#about h2{
+    padding-top: 70px;
+    font-size: 36px;
+}
+#about #dot{
+    background-color: #3fd464;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    right: 650px;
+    top: 55px;
+}
+#about #people1{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: #333;
+    border-radius: 50%;    
+    top: 200px;
+    left: 50px;
+}
+#about #people2{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border-radius: 50%;    
+    top: 300px;
+    left: 50px;
+    background-image: url("../img/sub.jpg");
+}
+#about_text{
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 600px;
+    position: absolute;
+    right: 30px;
+    top: 200px;
+}
+#about_text h3{
+    font-size: 32px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#about_text p{
+    line-height: 30px;
+}
+#about_text span{
+    font-weight: bold;
+}
+
+/* Work */
+#work{
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#work h2{
+    padding-top: 100px;
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+#work .dot2{
+    background-color: #3fd464;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    right: 660px;
+    top: 85px;
+}
+
+#work_list > li{
+    position: relative;
+    width: 386.66px;
+    height: 380px;
+    overflow: hidden;
+    float: left;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#work_list > li:nth-child(3n){
+    margin-right: 0;
+}
+
+/* work hover */
+#work_list > li > a > .info{
+    font-family: 'Nanum Gothic', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(107, 168, 224, 0.8);
+    text-align: center;
+    padding-top: 115px;
+    display: none;
+}
+.info h4{
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.info p{
+    color: #fff;
+    /* font-weight: bold; */
+    line-height: 32px;
+    font-size: 18px;
+    padding: 0 30px;
+}
+#work_list > li:hover .info{
+    display: block;
+}
+#work_list > li img{
+    transition: 0.5s;
+}
+#work_list > li:hover img{
+    transform: scale(1.2);
+}
+
+/* footer */
+#footer_wrap{
+    clear: both;
+    margin-top: 100px;
+    border-top: 1px solid #ddd;
+    background: #fafafa;
+}
+#footer{
+    clear: both;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+#footer #footer_logo{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+#footer #mail{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+#footer #mail li{
+    margin: 0 40px;
+    float: left;
+}

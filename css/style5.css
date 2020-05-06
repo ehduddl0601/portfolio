@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style-type: none;
+}
+
+/* 헤더 */
+#header_wrap{
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+#header{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+}
+#header h1{
+    position: absolute;
+    left: 20px;
+    top: 28px;
+}
+#header nav{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+#header nav ul li{
+    float: left;
+    margin: 0 40px;
+}
+#header nav ul li a{
+    font-size: 18px;
+    font-weight: bold;
+}
+#header nav ul li:nth-child(3) a{
+    color: #3fd464;
+}
+#header nav ul li a:hover{
+    color: #3fd464;
+}
+/* Work */
+#work{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    position: relative;
+    margin-top: 80px;
+}
+#work #number{
+    background: #3fd464;
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 48%;
+    top: 50px;
+    z-index: -3;
+    line-height: 50px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+#work h1{
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+#work #work_info{
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+#work_img img{
+    margin-bottom: 70px;
+    border: 1px solid #ccc;
+}
+#button{
+    position: absolute;
+    width: 1200px;
+    text-align: center;
+}
+#button span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #3fd464;
+    border-radius: 50%;
+    margin: 50px 80px;
+    line-height: 50px;
+}
+#button span a{
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+/* footer */
+#footer_wrap{
+    clear: both;
+    margin-top: 100px;
+    border-top: 1px solid #ddd;
+    background: #fafafa;
+}
+#footer{
+    clear: both;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+#footer #footer_logo{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+#footer #mail{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+#footer #mail li{
+    margin: 0 40px;
+    float: left;
+}
