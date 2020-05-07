@@ -58,21 +58,28 @@ ul{
     padding: 50px;
     position: relative;
     margin-top: 80px;
+    margin-bottom: 100px;
 }
-#work #number{
-    background: #3fd464;
+#work #number li{
     display: inline-block;
-    position: absolute;
+    line-height: 50px;
     width: 50px;
     height: 50px;
+    background: rgba(63, 212, 100, 0.5);
     border-radius: 50%;
-    right: 48%;
-    top: 50px;
-    z-index: -3;
-    line-height: 50px;
-    color: #fff;
-    font-size: 24px;
+    margin: 0 15px;
     font-weight: bold;
+    font-size: 22px;
+}
+#work #number li:nth-child(6){
+    background: rgba(63, 212, 100, 1);
+}
+#work #number li:hover{
+    background: rgba(63, 212, 100, 1);
+}
+#work #number li a{
+    padding: 10px;
+    color: #fff;
 }
 #work h1{
     font-weight: bold;
