@@ -78,8 +78,19 @@ ul{
     background: rgba(63, 212, 100, 1);
 }
 #work #number li a{
-    padding: 10px;
+    padding: 15px;
     color: #fff;
+}
+#work #bar{
+    display: inline-block;
+    width: 50px;
+    height: 6px;
+    background: rgba(63, 212, 100, 1);
+    border-radius: 5px;
+    position: absolute;
+    top: 110px;
+    left: 836px;
+    transition: 0.4s;
 }
 #work h1{
     font-weight: bold;

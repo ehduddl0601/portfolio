@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style4.css">
 </head>
 <body>
@@ -30,7 +31,9 @@
             <li><a href="work04.html">4</a></li>
             <li><a href="work05.html">5</a></li>
             <li><a href="work06.html">6</a></li>
-        </ul>        <h1>배너 디자인</h1>
+        </ul>
+        <span id="bar"></span>
+        <h1>배너 디자인</h1>
         <p id="work_info">실제 G마켓 배너와 동일한 규격에서 원하는 제품으로 재구성 및 목업</p>
         <div id="work_img">
             <img src="./img/work4-1.jpg" alt="" width="1000">
@@ -51,5 +54,35 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        $(function(){
+            $('#work #number li:nth-child(1) a').hover(function(){
+                $('#work #bar').css('left', '414px');
+            },function(){
+                $('#work #bar').css('left', '667px');
+            });
+            $('#work #number li:nth-child(2) a').hover(function(){
+                $('#work #bar').css('left', '498px');
+            },function(){
+                $('#work #bar').css('left', '667px');
+            });
+            $('#work #number li:nth-child(3) a').hover(function(){
+                $('#work #bar').css('left', '583px');
+            },function(){
+                $('#work #bar').css('left', '667px');
+            });
+            $('#work #number li:nth-child(5) a').hover(function(){
+                $('#work #bar').css('left', '752px');
+            },function(){
+                $('#work #bar').css('left', '667px');
+            });
+            $('#work #number li:nth-child(6) a').hover(function(){
+                $('#work #bar').css('left', '836px');
+            },function(){
+                $('#work #bar').css('left', '667px');
+            });
+        });
+    </script>
 </body>
 </html>
