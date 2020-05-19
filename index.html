@@ -6,6 +6,7 @@
     <title>Homepage</title>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -83,7 +84,7 @@
                 </li>
                 <li>
                     <a href="work05.html">
-                        <img src="./img/work5.jpg">
+                        <img src="./img/work5.jpg" height="380">
                         <div class="info">
                             <h4>홈페이지 시안</h4>
                             <p>스카이투자자문의 홈페이지를 포토샵에서<br>12분할로 맞춰 직접 시안제작</p>
@@ -92,7 +93,7 @@
                 </li>
                 <li>
                     <a href="work06.html">
-                        <img src="./img/work6.jpg">
+                        <img src="./img/work6.jpg" height="380">
                         <div class="info">
                             <h4>홈페이지 리뉴얼</h4>
                             <p>실제 가치투자자문의 홈페이지의 단점을<br>리뉴얼하여 리디자인</p>
@@ -110,5 +111,23 @@
             </ul>
         </div>
     </div>
+
+    <script>
+        $(function(){
+            $('a').on('click', function(event){
+                if(this.hash !== ""){
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 500, function(){
+
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
